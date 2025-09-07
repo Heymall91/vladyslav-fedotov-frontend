@@ -1,0 +1,190 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.arrow__item {
+  color: var(--color-yellow);
+  font-size: 2rem;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1152px;
+}
+
+.block__separate {
+  background-color: var(--color-dark-blue);
+  width: 100vw;
+  height: 45px;
+}
+
+.wrapper .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: var(--color-dark-blue);
+  padding: 28px 64px;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  width: 100%;
+  font-family: "JetBrains Mono", monospace;
+}
+header .wrapper > .block .menu,
+header .wrapper .block .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 19px;
+}
+header .wrapper > .block .menu > li a,
+header .wrapper .block .menu ul > li a {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+}
+header .wrapper > .block .menu > li a:hover,
+header .wrapper .block .menu ul > li a:hover {
+  color: #31C04B;
+}
+header .wrapper > .block .menu > li a:hover::before,
+header .wrapper .block .menu ul > li a:hover::before {
+  content: "/*";
+  position: absolute;
+  left: -19px;
+  top: 0;
+}
+header .wrapper > .block .menu > li a:hover::after,
+header .wrapper .block .menu ul > li a:hover::after {
+  content: "*/";
+  position: absolute;
+  right: -19px;
+  top: 0;
+}
+
+.menu__burger {
+  display: none;
+}
+.menu__burger > .menu__burger__blocks {
+  height: 42px;
+  width: 42px;
+  display: none;
+}
+.menu__burger > .menu__burger__blocks > .menu__burger__item {
+  background-color: var(--color-white);
+  height: 16px;
+  width: 100%;
+}
+
+.menu__burger__close {
+  position: relative;
+  height: 42px;
+  width: 42px;
+}
+.menu__burger__close > .menu__burger__item {
+  position: absolute;
+  top: 50%;
+  height: 8px;
+  width: 100%;
+  background-color: var(--color-white);
+}
+.menu__burger__close > .one {
+  rotate: 45deg;
+}
+.menu__burger__close > .two {
+  rotate: -45deg;
+}
+
+.intro {
+  background-color: var(--color-medium-blue);
+  margin-top: 125px;
+}
+.intro > .wrapper > .block {
+  gap: 60px;
+}
+.intro > .wrapper > .block > .intro__subblock {
+  margin: 70px 0;
+}
+.intro > .wrapper > .block > .intro__subblock .intro__about__me {
+  min-height: 708px;
+  width: 593px;
+  background-color: var(--color-gray);
+  -webkit-box-shadow: 12px 16px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 12px 16px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  padding: 5px 7px;
+  color: var(--color-white);
+}
+.intro > .wrapper > .block > .intro__subblock .intro__about__me > .intro__ahead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  padding: 7px 11px 13px 11px;
+}
+.intro > .wrapper > .block > .intro__subblock .intro__about__me > .intro__ahead > .intro__file__name {
+  font-family: "Ubuntu Mono";
+  font-size: 18px;
+  color: var(--color-white);
+}
+.intro > .wrapper > .block > .intro__subblock .intro__about__me > .intro__text__block {
+  min-height: 660px;
+  border-radius: 12px;
+  background-color: var(--color-dark-blue);
+  padding: 39px 99px 39px 58px;
+  line-height: 48px;
+}
+.intro > .wrapper > .block > .intro__subblock .intro__about__me > .intro__text__block > .html__item, .intro > .wrapper > .block > .intro__subblock .intro__about__me > .intro__text__block .html__item div, .intro > .wrapper > .block > .intro__subblock .intro__about__me > .intro__text__block .html__hello, .intro > .wrapper > .block > .intro__subblock .intro__about__me > .intro__text__block .text_typed .Typewriter .Typewriter__wrapper, .intro > .wrapper > .block > .intro__subblock .intro__about__me > .intro__text__block .text_typed .Typewriter .Typewriter__cursor {
+  font-family: "Ubuntu Mono";
+  font-size: 2rem;
+  color: var(--color-white);
+}
+.intro > .wrapper > .block > .intro__subblock .intro__about__me > .intro__text__block > .html__item,
+.intro > .wrapper > .block > .intro__subblock .intro__about__me > .intro__text__block .html__item div {
+  color: var(--color-light-blue);
+  font-size: 2rem;
+}
+.intro > .wrapper > .block > .intro__subblock .intro__about__me > .intro__text__block > .text_typed {
+  font-size: 2rem;
+}
+.intro > .wrapper > .block > .intro__pc {
+  position: relative;
+}
+.intro > .wrapper > .block > .intro__pc::before {
+  content: url("../assets/intro-svg/button.svg");
+  position: absolute;
+  bottom: 17.2%;
+  left: 48%;
+  width: 140px;
+  height: 112px;
+  z-index: 10;
+}

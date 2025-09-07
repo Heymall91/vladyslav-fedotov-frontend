@@ -1,0 +1,11 @@
+{
+    "header": {
+        "aboutMe": "About me",
+        "mySkills": "My skills",
+        "portfolio": "Portfolio",
+        "contacts": "Contacts"
+    },
+    "intro": {
+        "p": "My name is Vladyslav\n Fedotov and I’m a\n Frontend Developer.\n I can make some\n interesting things\n for your website"
+    }
+}

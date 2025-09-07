@@ -1,0 +1,11 @@
+{
+  "header": {
+    "aboutMe"  : "O mnie",
+    "mySkills" : "Umiejętności",
+    "portfolio": "Portfolio",
+    "contacts" : "Kontakty"
+  },
+  "intro": {
+    "p": "Nazywam się Vladyslav\n Fedotov i jestem Frontend Developerem. Mogę podać ciekawe rozwiązania dla twojej strony internetowej WWW"
+  }
+}

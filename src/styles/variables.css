@@ -1,0 +1,14 @@
+:root{
+    --color-black: #000;
+    --color-white: #fff;
+    --color-gray: #969696;
+    --color-dark-blue: #0C2156;
+    --color-medium-blue: #2A3E70;
+    --color-light-blue: #5D78BC;
+    --color-green-hover: #31C04B;
+    --color-yellow: #CEAD29;
+    
+    --box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+
+    --regular: 500;
+}
