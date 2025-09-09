@@ -7,5 +7,15 @@
     },
     "intro": {
         "p": "My name is Vladyslav\n Fedotov and I’m a\n Frontend Developer.\n I can make some\n interesting things\n for your website"
+    },
+    "myCompetitions": {
+        "title": "My competitions",
+        "softSkills":{
+            "one": "diligence",
+            "two": "desire for professional\n growth",
+            "three": "reliability",
+            "four": "ability to work in a\n team",
+            "five": "timely execution of\n tasks"
+        }
     }
 }

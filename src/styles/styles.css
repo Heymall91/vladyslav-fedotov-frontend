@@ -23,7 +23,6 @@
 
 .block__separate {
   background-color: var(--color-dark-blue);
-  width: 100vw;
   height: 45px;
 }
 
@@ -37,6 +36,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.intro, .my__competitions {
+  background-color: var(--color-medium-blue);
 }
 
 /* header */
@@ -125,7 +128,6 @@ header .wrapper .block .menu ul > li a:hover::after {
 }
 
 .intro {
-  background-color: var(--color-medium-blue);
   margin-top: 125px;
 }
 .intro > .wrapper > .block {
@@ -186,5 +188,132 @@ header .wrapper .block .menu ul > li a:hover::after {
   left: 48%;
   width: 140px;
   height: 112px;
-  z-index: 10;
+  z-index: 1;
+}
+
+.my__competitions > .wrapper > .block {
+  padding: 4rem 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4rem;
+}
+.my__competitions > .wrapper > .block > h2 {
+  font-family: "Ubuntu Mono";
+  font-size: 56px;
+  color: var(--color-white);
+}
+.my__competitions > .wrapper > .block > .my__competitions__block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--color-dark-blue);
+  border-radius: 12px;
+  -webkit-box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+  padding: 64px 85px;
+  align-items: center;
+  height: 674px;
+}
+.my__competitions > .wrapper > .block > .my__competitions__block > .block__separate {
+  background-color: var(--color-white);
+  width: 4px;
+  height: 100%;
+}
+.my__competitions > .wrapper > .block > .my__competitions__block > .skills {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+.my__competitions > .wrapper > .block > .my__competitions__block > .skills > .skills__ahead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 11px;
+  padding-bottom: 33px;
+}
+.my__competitions > .wrapper > .block > .my__competitions__block > .skills > .skills__ahead > h3 {
+  font-family: "Ubuntu Mono";
+  font-size: 56px;
+  font-weight: 400;
+  color: var(--color-white);
+  white-space: pre;
+}
+.my__competitions > .wrapper > .block > .my__competitions__block > .skills > .skills__list > li, .my__competitions > .wrapper > .block > .my__competitions__block > .skills span {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 24px;
+  color: var(--color-white);
+  font-weight: 700;
+}
+.my__competitions > .wrapper > .block > .my__competitions__block > .skills.hard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.my__competitions > .wrapper > .block > .my__competitions__block > .skills.hard > .skills__list.hard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 18px;
+}
+.my__competitions > .wrapper > .block > .my__competitions__block > .skills.hard > .skills__list.hard > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 19px;
+}
+.my__competitions > .wrapper > .block > .my__competitions__block > .skills.hard > .skills__list.hard > li > img {
+  height: 64px;
+  width: 64px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.my__competitions > .wrapper > .block > .my__competitions__block > .skills.hard > .skills__list.hard > li > span {
+  font-size: 24px;
+}
+.my__competitions > .wrapper > .block > .my__competitions__block > .skills.soft > .skills__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+.my__competitions > .wrapper > .block > .my__competitions__block > .skills.soft > .skills__list > li {
+  font-size: 28px;
+  font-weight: bold;
+  list-style: disc;
+  white-space: pre-line;
 }

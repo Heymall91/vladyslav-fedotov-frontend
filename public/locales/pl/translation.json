@@ -7,5 +7,15 @@
   },
   "intro": {
     "p": "Nazywam się Vladyslav\n Fedotov i jestem Frontend Developerem. Mogę podać ciekawe rozwiązania dla twojej strony internetowej WWW"
-  }
+  },
+  "myCompetitions": {
+        "title": "Moje kompetencje",
+        "softSkills":{
+            "one": "sumienność",
+            "two": "chęć rozwoju\n zawodowego",
+            "three": "rzetelność",
+            "four": "umiejętność pracy\n w zespole",
+            "five": "terminowe wykonywanie\n zadań"
+        }
+    }
 }

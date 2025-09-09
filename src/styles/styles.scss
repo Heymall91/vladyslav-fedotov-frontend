@@ -17,6 +17,12 @@
     align-items: center;
 }
 
+@mixin svgSize(){
+    height: 64px;
+    width: 64px;
+    object-fit: cover;
+}
+
 // general
 
 .arrow__item {
@@ -31,12 +37,15 @@
 
 .block__separate{
     background-color: var(--color-dark-blue);
-    width: 100vw;
     height: 45px;
 }
 
 .wrapper .block {
     @include flexBlock();
+}
+
+.intro, .my__competitions{
+    background-color: var(--color-medium-blue);
 }
 
 /* header */
@@ -129,8 +138,8 @@ header {
 // intro
 
 .intro {
-    background-color: var(--color-medium-blue);
     margin-top: 125px;
+
 
     >.wrapper {
 
@@ -199,9 +208,119 @@ header {
                     left: 48%;
                     width: 140px;
                     height: 112px;
-                    z-index: 10;
+                    z-index: 1;
                 }
             }
         }
     }
 }
+
+// my competitions
+
+.my__competitions {
+
+    > .wrapper{
+
+        > .block{
+            padding: 4rem 0;
+            flex-direction: column;
+            gap: 4rem;
+
+            > h2{
+                font-family: "Ubuntu Mono";
+                font-size: 56px;
+                color: var(--color-white);
+            }
+
+            > .my__competitions__block{
+                width: 100%;
+                @include flexBlock();
+                background-color: var(--color-dark-blue);
+                border-radius: 12px;
+                box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+                padding: 64px 85px;
+                align-items: center;
+                // gap: 215px;
+                height: 674px;
+
+                > .block__separate{
+                    background-color: var(--color-white);
+                    width: 4px;
+                    height: 100%;
+                }
+
+                > .skills{
+                    align-self: baseline;
+
+                    > .skills__ahead{
+                        @include flexBlock();
+                        gap: 11px;
+                        padding-bottom: 33px;
+
+                        > h3{
+                            font-family: "Ubuntu Mono";
+                            font-size: 56px;
+                            font-weight: 400;
+                            color: var(--color-white);
+                            white-space: pre;
+                        }
+                    }
+
+                    > .skills__list > li, span{
+                        font-family: "JetBrains Mono", monospace;
+                        font-size: 24px;
+                        color: var(--color-white);
+                        font-weight: 700;
+                    }
+                }
+
+                // hard
+
+                > .skills.hard{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    >.skills__list.hard {
+
+                        display: flex;
+                        flex-direction: column;
+                        gap: 18px;
+
+                        > li{
+                        display: flex;
+                        align-items: center;
+                        gap: 19px;
+
+                            > img{
+                                @include svgSize();
+                            }
+
+                            > span{
+                                font-size: 24px;
+                            }
+                        }
+                    }
+                }
+
+                // soft
+
+                > .skills.soft{
+                   > .skills__list{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px; 
+                        
+                        > li{
+                            font-size: 28px;
+                            font-weight: bold;
+                            list-style: disc;
+                            white-space: pre-line;
+                    }
+                   }
+                }
+            }
+        }
+    }
+} 
