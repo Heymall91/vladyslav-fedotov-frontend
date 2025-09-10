@@ -1,4 +1,34 @@
-@media(min-width: 1110px){
+@media(max-width: 1220px){
+    .intro .wrapper .block{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .my__competitions .wrapper .block .my__competitions__block{
+        height: auto;
+        width: 90%;
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .my__competitions > .wrapper > .block > .my__competitions__block > .skills{
+        align-self: normal;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .my__competitions > .wrapper > .block > .my__competitions__block > .skills.soft > .skills__list > li{
+        text-align: center;
+        list-style-position: inside;
+
+    }
+
+    .my__competitions > .wrapper > .block > .my__competitions__block > .block__separate{
+        width: 100%;
+        height: 4px;
+    }
 
 }
 

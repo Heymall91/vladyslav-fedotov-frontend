@@ -72,7 +72,7 @@ header {
                 color: #fff;
 
                 &:hover {
-                    color: #31C04B;
+                    color: var(--color-green-hover);
 
                     &::before {
                         content: '/*';
@@ -253,7 +253,9 @@ header {
                     align-self: baseline;
 
                     > .skills__ahead{
-                        @include flexBlock();
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         gap: 11px;
                         padding-bottom: 33px;
 
@@ -324,3 +326,29 @@ header {
         }
     }
 } 
+
+// credits
+
+.credits{
+    background-color: var(--color-dark-blue);
+
+    > .wrapper{
+
+        > .block p{
+            width: 100%;
+            text-align: right;
+        }
+
+        > .block p, .block p a{
+            font-family: "JetBrains Mono", monospace;
+            font-size: 12px;
+            font-weight: 400;
+            color: var(--color-white);
+            padding: 28px 0;
+        }
+
+        > .block p a:hover{
+            color: var(--color-green-hover);
+        }
+    }
+}

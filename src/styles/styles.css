@@ -77,7 +77,7 @@ header .wrapper .block .menu ul > li a {
 }
 header .wrapper > .block .menu > li a:hover,
 header .wrapper .block .menu ul > li a:hover {
-  color: #31C04B;
+  color: var(--color-green-hover);
 }
 header .wrapper > .block .menu > li a:hover::before,
 header .wrapper .block .menu ul > li a:hover::before {
@@ -236,9 +236,9 @@ header .wrapper .block .menu ul > li a:hover::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -316,4 +316,22 @@ header .wrapper .block .menu ul > li a:hover::after {
   font-weight: bold;
   list-style: disc;
   white-space: pre-line;
+}
+
+.credits {
+  background-color: var(--color-dark-blue);
+}
+.credits > .wrapper > .block p {
+  width: 100%;
+  text-align: right;
+}
+.credits > .wrapper > .block p, .credits > .wrapper .block p a {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--color-white);
+  padding: 28px 0;
+}
+.credits > .wrapper > .block p a:hover {
+  color: var(--color-green-hover);
 }
