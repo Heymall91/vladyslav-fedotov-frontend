@@ -18,6 +18,21 @@
             "five": "terminowe wykonywanie\n zadań"
         }
   },
+  "portfolio": {
+    "title": "Portfolio",
+    "click": "Aby otworzyć, stuknij obrazek z lewa",
+    "des": "Opis",
+    "technologies": "Napisane za pomocą",
+    "farmzi": {
+      "des": "Ten projekt został stworzony jako landing-page dla eko-rolników. Zastosowano w nim również pewne praktyki do ćwiczenia Reacta i SCSS."
+    },
+    "pan-broker": {
+      "des": "Ta strona lądowania została stworzona dla brokera pszenicy. Posiada dwie wersje językowe: ukraińską i angielską"
+    },
+    "finsweet": {
+      "des": "Pet-projekt strony internetowej dla rekrutacji blogerów."
+    }
+  },
   "credits": {
       "title": "Niniejsza strona WWW została zaprojektowana przez "
   }

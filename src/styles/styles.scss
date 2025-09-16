@@ -11,10 +11,11 @@
 
 // mixins
 
-@mixin flexBlock() {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+@mixin display($dispos, $juscon, $align, $flexDir){
+    display: $dispos;
+    justify-content: $juscon;
+    align-items: $align;
+    flex-direction: $flexDir;
 }
 
 @mixin svgSize(){
@@ -23,7 +24,22 @@
     object-fit: cover;
 }
 
+@mixin fontOptions($family, $size, $weight, $color){
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
 // general
+
+.ahead{
+    font-family: "Ubuntu Mono";
+    font-size: var(--big-font);
+    font-weight: 600;
+    color: var(--color-white);
+    padding-bottom: 4rem;
+}
 
 .arrow__item {
     color: var(--color-yellow);
@@ -41,7 +57,13 @@
 }
 
 .wrapper .block {
-    @include flexBlock();
+    @include display(flex, space-between, center, row);
+}
+
+
+
+.block{
+    padding: 4rem 0;
 }
 
 .intro, .my__competitions{
@@ -62,6 +84,10 @@ header {
     font-family: "JetBrains Mono", monospace;
 
     .wrapper {
+
+        > .block{
+            padding: 0;
+        }
 
         >.block .menu,
         .block .menu ul {
@@ -90,7 +116,7 @@ header {
                 }
             }
 
-            @include flexBlock();
+            @include display(flex, space-between, center, row);
             gap: 19px;
         }
     }
@@ -145,6 +171,7 @@ header {
 
         >.block {
             gap: 60px;
+            padding: 0;
 
             >.intro__subblock {
                 margin: 70px 0;
@@ -222,25 +249,22 @@ header {
     > .wrapper{
 
         > .block{
-            padding: 4rem 0;
-            flex-direction: column;
-            gap: 4rem;
+            @include display(flex, center, center, column);
 
             > h2{
                 font-family: "Ubuntu Mono";
-                font-size: 56px;
+                font-size: var(--big-font);
                 color: var(--color-white);
             }
 
             > .my__competitions__block{
                 width: 100%;
-                @include flexBlock();
+                @include display(flex, space-between, center, row);
                 background-color: var(--color-dark-blue);
                 border-radius: 12px;
                 box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
                 padding: 64px 85px;
                 align-items: center;
-                // gap: 215px;
                 height: 674px;
 
                 > .block__separate{
@@ -261,7 +285,7 @@ header {
 
                         > h3{
                             font-family: "Ubuntu Mono";
-                            font-size: 56px;
+                            font-size: var(--big-font);
                             font-weight: 400;
                             color: var(--color-white);
                             white-space: pre;
@@ -279,10 +303,7 @@ header {
                 // hard
 
                 > .skills.hard{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
+                    @include display(flex, center, center, column);
 
                     >.skills__list.hard {
 
@@ -327,6 +348,177 @@ header {
     }
 } 
 
+// portfolio
+
+.portfolio{
+    background-color: var(--color-medium-blue);
+    > .wrapper{
+        > .block{
+            @include display(flex, center, center, column);
+            
+            > .portfolio__list{
+                width: 100%;
+                @include display(flex, center, center, column);
+                gap: 49px;
+
+                > .portfolio__item{
+                    border-radius: 12px;
+                    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+                    display: flex;
+                    gap: var(--big-font);
+                    padding: 25px 38px;
+                    width: 100%;
+                    background-color: var(--color-dark-blue);
+
+                    > .portfolio__image__link{
+
+                        > .portfolio__ahead{
+                            border-radius: 14px 14px 0 0;
+                            background-color: var(--color-gray);
+                            max-width: 155px;
+                            display: flex;
+                            align-items: center;
+                            gap: 6px;
+                            padding: 8px 19px 4px 19px;
+
+                            > p{
+                                font-family: "Ubuntu Mono";
+                                font-weight: bold;
+                                font-size: 18px;
+                                color: #fff;
+                            }
+                        }
+
+                        > .portfolio__img__block{
+                            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+                            background-color: var(--color-gray);
+                            border-radius: 0px 14px 14px 14px;
+                            padding: 11px;
+                        }
+                    }
+                    > .portfolio__image__link img{
+                        border-radius: 14px;
+                    }
+
+                    > .portfolio__des{
+                        width: 100%;
+                        padding-top: 1rem;
+
+                        > .portfolio__des__ahead{
+
+                            h3{
+                                font-family: "JetBrains Mono", monospace;
+                                font-size: var(--big-font);
+                                font-weight: 400;
+                                color: var(--color-white);
+                            }
+
+                            p{
+                                font-family: "Ubuntu Mono";
+                                font-size: var(--common-text-big);
+                                font-weight: bold;
+                                color: var(--color-white);
+                            }
+                        }
+
+                        > .portfolio__des__main{
+                            line-height: 24px;
+                            padding: 50px 0;
+                            p{
+                                font-family: "Ubuntu Mono";
+                                font-size: var(--common-text-big);
+                                font-weight: bold;
+                                color: var(--color-white);
+                            }
+                        }
+
+                        > .portfolio__des__technology{
+
+                            h4{
+                                position: relative;
+                                font-family: "JetBrains Mono", monospace;
+                                font-size: var(--medium-font);
+                                color: var(--color-white);
+                                padding-bottom: 32px;
+
+                                &::before{
+                                    content: "";
+                                    position: absolute;
+                                    height: 3px;
+                                    width: 100%;
+                                    background-color: var(--color-white);
+                                    top: 70%;
+                                }
+                            }
+
+                            > .portfolio__des__technology__list, .portfolio__des__technology__list .technology__item{
+                                display: flex;
+                                align-items: center;
+                                gap: 11px;
+                            }
+
+                            > .portfolio__des__technology__list .technology__item{
+                                border-radius: 30px;
+                                min-height: 46px;
+                                background-color: var(--color-light-blue);
+                                padding: 7px 11px 7px 8px;
+
+                                > .technology__item__img{
+                                    position: relative;
+                                    background-color: var(--color-gray-light);
+                                    border-radius: 50%;
+                                    height: 36px;
+                                    width: 36px;
+
+                                    > img{
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 50%;
+                                        transform: translate(-50%, -50%);
+                                        
+                                    }
+                                }
+
+                                > p{
+                                    color: var(--color-white);
+                                    font-family: "JetBrains Mono", monospace;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// contacts
+
+.contacts{
+    background-color: var(--color-medium-blue);
+    > .wrapper{
+        > .block{
+            @include display(flex, center, center, column)
+        }
+        >.block .contacts__subblock{
+            background-color: var(--color-dark-blue);
+            @include display(flex, space-between, center, row);
+
+            .contacts__form p{
+                @include fontOptions("Ubuntu Mono", 20px, "regular", var(--color-white));
+                white-space: pre-line;
+                color: var(--color-white);
+            }
+
+            .contacts__links{
+                h3{
+                    @include fontOptions("JetBrains Mono", 28px, 400, var(--color-white));
+                }
+            }
+        }
+    }
+}
+
 // credits
 
 .credits{
@@ -334,9 +526,13 @@ header {
 
     > .wrapper{
 
+        > .block{
+            padding: 0;
+        }
+
         > .block p{
             width: 100%;
-            text-align: right;
+            text-align: center;
         }
 
         > .block p, .block p a{

@@ -16,7 +16,7 @@ export default function MyCompetitions(){
         <div className="my__competitions">
             <div className="wrapper">
                 <div className="block">
-                    <h2>{t("myCompetitions.title")}</h2>
+                    <div className="ahead">{t("myCompetitions.title")}</div>
                     <div className="my__competitions__block">
                         <div className="skills hard">
                             <div className="skills__ahead">

@@ -1,0 +1,25 @@
+[
+    {
+        "title": "Farmzi",
+        "logo": "../../../src/assets/portfolio/farmzi/farmzi-logo.png",
+        "img": "../../../src/assets/portfolio/farmzi/farmzi-maket.jpg",
+        "link": "https://heymall91.github.io/farmzi/",
+        "des": "portfolio.farmzi.des",
+        "tech": [{"techName": "React", "techLogo": "../../../src/assets/portfolio/technologies/react.svg"}, {"techName": "HTML, JSX", "techLogo": "../../../src/assets/portfolio/technologies/html.svg"},{"techName": "SCSS", "techLogo": "../../../src/assets/portfolio/technologies/scss.svg"}]
+    },
+    {
+        "title": "Pan Broker",
+        "logo": "../../../src/assets/portfolio/pan-broker/logo.png",
+        "img": "../../../src/assets/portfolio/pan-broker/pan-broker-maket.jpg",
+        "link": " https://heymall91.github.io/panbroker/panBroker.html",
+        "des": "portfolio.pan-broker.des",
+        "tech": [{"techName": "JavaScript", "techLogo": "../../../src/assets/portfolio/technologies/js.svg"}, {"techName": "HTML", "techLogo": "../../../src/assets/portfolio/technologies/html.svg"},{"techName": "CSS3", "techLogo": "../../../src/assets/portfolio/technologies/css.svg"}]
+    },
+    {
+        "title": "}finsweet",
+        "img": "../../../src/assets/portfolio/finsweet/finsweet-maket.jpg",
+        "link": "https://heymall91.github.io/finsweet/",
+        "des": "portfolio.finsweet.des",
+        "tech": [{"techName": "HTML, JSX", "techLogo": "../../../src/assets/portfolio/technologies/html.svg"}, {"techName": "SCSS", "techLogo": "../../../src/assets/portfolio/technologies/scss.svg"}, {"techName": "React", "techLogo": "../../../src/assets/portfolio/technologies/react.svg"}]
+    }
+]

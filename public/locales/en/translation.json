@@ -18,6 +18,34 @@
             "five": "timely execution of\n tasks"
         }
     },
+    "portfolio": {
+        "title": "Portfolio",
+        "click": "Click the picture to open website",
+        "des": "Description",
+        "technologies": "Used technologies",
+        "farmzi": {
+            "des": "This pet-project has been created as a landing-page for eco-farmers. Also here were applied some practices for training React and SCSS."
+        },
+        "pan-broker": {
+            "des": "This landing page has been created for wheat broker. It has 2 language versions: ukrainian and english."
+        },
+        "finsweet": {
+            "des": "Pet-project website for to hire bloggers."
+        }
+    },
+    "contacts": {
+        "title": "Contacts",
+        "message": "If you want to /*ask me*/ or would be\n /*interested in the partnership*/, please\n write me in form below. I’ll answer for sure",
+        "form": {
+            "email": "Your email",
+            "theme": "Theme",
+            "message": "Your message",
+            "send": "Send"
+        },
+        "links":{
+            "title": "Also you can find me here"
+        }
+    },
     "credits": {
         "title": "This website has been created by "
     }

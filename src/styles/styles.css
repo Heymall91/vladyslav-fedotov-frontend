@@ -11,6 +11,14 @@
   transition: 0.3s;
 }
 
+.ahead {
+  font-family: "Ubuntu Mono";
+  font-size: var(--big-font);
+  font-weight: 600;
+  color: var(--color-white);
+  padding-bottom: 4rem;
+}
+
 .arrow__item {
   color: var(--color-yellow);
   font-size: 2rem;
@@ -36,6 +44,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.block {
+  padding: 4rem 0;
 }
 
 .intro, .my__competitions {
@@ -55,6 +71,9 @@ header {
   width: 100%;
   font-family: "JetBrains Mono", monospace;
 }
+header .wrapper > .block {
+  padding: 0;
+}
 header .wrapper > .block .menu,
 header .wrapper .block .menu ul {
   display: -webkit-box;
@@ -66,6 +85,10 @@ header .wrapper .block .menu ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   gap: 19px;
 }
 header .wrapper > .block .menu > li a,
@@ -132,6 +155,7 @@ header .wrapper .block .menu ul > li a:hover::after {
 }
 .intro > .wrapper > .block {
   gap: 60px;
+  padding: 0;
 }
 .intro > .wrapper > .block > .intro__subblock {
   margin: 70px 0;
@@ -192,16 +216,23 @@ header .wrapper .block .menu ul > li a:hover::after {
 }
 
 .my__competitions > .wrapper > .block {
-  padding: 4rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 4rem;
 }
 .my__competitions > .wrapper > .block > h2 {
   font-family: "Ubuntu Mono";
-  font-size: 56px;
+  font-size: var(--big-font);
   color: var(--color-white);
 }
 .my__competitions > .wrapper > .block > .my__competitions__block {
@@ -215,6 +246,10 @@ header .wrapper .block .menu ul > li a:hover::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   background-color: var(--color-dark-blue);
   border-radius: 12px;
   -webkit-box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
@@ -247,7 +282,7 @@ header .wrapper .block .menu ul > li a:hover::after {
 }
 .my__competitions > .wrapper > .block > .my__competitions__block > .skills > .skills__ahead > h3 {
   font-family: "Ubuntu Mono";
-  font-size: 56px;
+  font-size: var(--big-font);
   font-weight: 400;
   color: var(--color-white);
   white-space: pre;
@@ -262,16 +297,16 @@ header .wrapper .block .menu ul > li a:hover::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .my__competitions > .wrapper > .block > .my__competitions__block > .skills.hard > .skills__list.hard {
   display: -webkit-box;
@@ -318,12 +353,215 @@ header .wrapper .block .menu ul > li a:hover::after {
   white-space: pre-line;
 }
 
+.portfolio {
+  background-color: var(--color-medium-blue);
+}
+.portfolio > .wrapper > .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.portfolio > .wrapper > .block > .portfolio__list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 49px;
+}
+.portfolio > .wrapper > .block > .portfolio__list > .portfolio__item {
+  border-radius: 12px;
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: var(--big-font);
+  padding: 25px 38px;
+  width: 100%;
+  background-color: var(--color-dark-blue);
+}
+.portfolio > .wrapper > .block > .portfolio__list > .portfolio__item > .portfolio__image__link > .portfolio__ahead {
+  border-radius: 14px 14px 0 0;
+  background-color: var(--color-gray);
+  max-width: 155px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 6px;
+  padding: 8px 19px 4px 19px;
+}
+.portfolio > .wrapper > .block > .portfolio__list > .portfolio__item > .portfolio__image__link > .portfolio__ahead > p {
+  font-family: "Ubuntu Mono";
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+}
+.portfolio > .wrapper > .block > .portfolio__list > .portfolio__item > .portfolio__image__link > .portfolio__img__block {
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--color-gray);
+  border-radius: 0px 14px 14px 14px;
+  padding: 11px;
+}
+.portfolio > .wrapper > .block > .portfolio__list > .portfolio__item > .portfolio__image__link img {
+  border-radius: 14px;
+}
+.portfolio > .wrapper > .block > .portfolio__list > .portfolio__item > .portfolio__des {
+  width: 100%;
+  padding-top: 1rem;
+}
+.portfolio > .wrapper > .block > .portfolio__list > .portfolio__item > .portfolio__des > .portfolio__des__ahead h3 {
+  font-family: "JetBrains Mono", monospace;
+  font-size: var(--big-font);
+  font-weight: 400;
+  color: var(--color-white);
+}
+.portfolio > .wrapper > .block > .portfolio__list > .portfolio__item > .portfolio__des > .portfolio__des__ahead p {
+  font-family: "Ubuntu Mono";
+  font-size: var(--common-text-big);
+  font-weight: bold;
+  color: var(--color-white);
+}
+.portfolio > .wrapper > .block > .portfolio__list > .portfolio__item > .portfolio__des > .portfolio__des__main {
+  line-height: 24px;
+  padding: 50px 0;
+}
+.portfolio > .wrapper > .block > .portfolio__list > .portfolio__item > .portfolio__des > .portfolio__des__main p {
+  font-family: "Ubuntu Mono";
+  font-size: var(--common-text-big);
+  font-weight: bold;
+  color: var(--color-white);
+}
+.portfolio > .wrapper > .block > .portfolio__list > .portfolio__item > .portfolio__des > .portfolio__des__technology h4 {
+  position: relative;
+  font-family: "JetBrains Mono", monospace;
+  font-size: var(--medium-font);
+  color: var(--color-white);
+  padding-bottom: 32px;
+}
+.portfolio > .wrapper > .block > .portfolio__list > .portfolio__item > .portfolio__des > .portfolio__des__technology h4::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: var(--color-white);
+  top: 70%;
+}
+.portfolio > .wrapper > .block > .portfolio__list > .portfolio__item > .portfolio__des > .portfolio__des__technology > .portfolio__des__technology__list, .portfolio > .wrapper > .block > .portfolio__list > .portfolio__item > .portfolio__des > .portfolio__des__technology .portfolio__des__technology__list .technology__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 11px;
+}
+.portfolio > .wrapper > .block > .portfolio__list > .portfolio__item > .portfolio__des > .portfolio__des__technology > .portfolio__des__technology__list .technology__item {
+  border-radius: 30px;
+  min-height: 46px;
+  background-color: var(--color-light-blue);
+  padding: 7px 11px 7px 8px;
+}
+.portfolio > .wrapper > .block > .portfolio__list > .portfolio__item > .portfolio__des > .portfolio__des__technology > .portfolio__des__technology__list .technology__item > .technology__item__img {
+  position: relative;
+  background-color: var(--color-gray-light);
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+}
+.portfolio > .wrapper > .block > .portfolio__list > .portfolio__item > .portfolio__des > .portfolio__des__technology > .portfolio__des__technology__list .technology__item > .technology__item__img > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.portfolio > .wrapper > .block > .portfolio__list > .portfolio__item > .portfolio__des > .portfolio__des__technology > .portfolio__des__technology__list .technology__item > p {
+  color: var(--color-white);
+  font-family: "JetBrains Mono", monospace;
+}
+
+.contacts {
+  background-color: var(--color-medium-blue);
+}
+.contacts > .wrapper > .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contacts > .wrapper > .block .contacts__subblock {
+  background-color: var(--color-dark-blue);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.contacts > .wrapper > .block .contacts__subblock .contacts__form p {
+  font-family: "Ubuntu Mono";
+  font-size: 20px;
+  font-weight: "regular";
+  color: var(--color-white);
+  white-space: pre-line;
+  color: var(--color-white);
+}
+.contacts > .wrapper > .block .contacts__subblock .contacts__links h3 {
+  font-family: "JetBrains Mono";
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--color-white);
+}
+
 .credits {
   background-color: var(--color-dark-blue);
 }
+.credits > .wrapper > .block {
+  padding: 0;
+}
 .credits > .wrapper > .block p {
   width: 100%;
-  text-align: right;
+  text-align: center;
 }
 .credits > .wrapper > .block p, .credits > .wrapper .block p a {
   font-family: "JetBrains Mono", monospace;

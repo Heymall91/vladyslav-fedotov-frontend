@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react'
 import Typewriter from 'typewriter-effect'
 
 // svg
@@ -13,7 +12,7 @@ export default function Intro() {
     return (
         <div className="intro">
             <div className="wrapper">
-                <div className="block">
+                <div className="block flex">
                     <div className="intro__subblock">
                         <div className="intro__about__me">
                             <div className="intro__ahead">
