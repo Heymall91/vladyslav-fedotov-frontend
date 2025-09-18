@@ -85,10 +85,6 @@ header .wrapper .block .menu ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   gap: 19px;
 }
 header .wrapper > .block .menu > li a,
@@ -537,20 +533,196 @@ header .wrapper .block .menu ul > li a:hover::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  border-radius: 10px;
+  -webkit-box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  padding: 64px 80px;
+  border-radius: 10px;
+}
+.contacts > .wrapper > .block .contacts__subblock .block__separate {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  background-color: var(--color-white);
+  height: 333px;
+  width: 4px;
+  border-radius: 2px;
+}
+.contacts > .wrapper > .block .contacts__subblock .contacts__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 21px;
 }
 .contacts > .wrapper > .block .contacts__subblock .contacts__form p {
   font-family: "Ubuntu Mono";
   font-size: 20px;
-  font-weight: "regular";
+  font-weight: 400;
   color: var(--color-white);
   white-space: pre-line;
-  color: var(--color-white);
+}
+.contacts > .wrapper > .block .contacts__subblock .contacts__form p span {
+  font-size: 20px;
+  color: var(--color-green-hover);
+}
+.contacts > .wrapper > .block .contacts__subblock .contacts__form form {
+  background-color: var(--color-light-blue);
+  padding: 16px 23px;
+  min-height: 273px;
+  width: 300px;
+  border-radius: 10px;
+  -webkit-box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 13px;
+}
+.contacts > .wrapper > .block .contacts__subblock .contacts__form form > .form__input {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.contacts > .wrapper > .block .contacts__subblock .contacts__form form > .form__input > input {
+  min-height: 30px;
+  text-indent: 15px;
+  color: var(--color-green-hover);
+}
+.contacts > .wrapper > .block .contacts__subblock .contacts__form form > .form__input > .remove__cross svg {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.contacts > .wrapper > .block .contacts__subblock .contacts__form form input, .contacts > .wrapper > .block .contacts__subblock .contacts__form form textarea, .contacts > .wrapper > .block .contacts__subblock .contacts__form form button {
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+}
+.contacts > .wrapper > .block .contacts__subblock .contacts__form form input:not(button)::-webkit-input-placeholder, .contacts > .wrapper > .block .contacts__subblock .contacts__form form textarea:not(button)::-webkit-input-placeholder, .contacts > .wrapper > .block .contacts__subblock .contacts__form form button:not(button)::-webkit-input-placeholder {
+  font-family: "JetBrains Mono";
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--color-green-hover);
+}
+.contacts > .wrapper > .block .contacts__subblock .contacts__form form input:not(button)::-moz-placeholder, .contacts > .wrapper > .block .contacts__subblock .contacts__form form textarea:not(button)::-moz-placeholder, .contacts > .wrapper > .block .contacts__subblock .contacts__form form button:not(button)::-moz-placeholder {
+  font-family: "JetBrains Mono";
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--color-green-hover);
+}
+.contacts > .wrapper > .block .contacts__subblock .contacts__form form input:not(button):-ms-input-placeholder, .contacts > .wrapper > .block .contacts__subblock .contacts__form form textarea:not(button):-ms-input-placeholder, .contacts > .wrapper > .block .contacts__subblock .contacts__form form button:not(button):-ms-input-placeholder {
+  font-family: "JetBrains Mono";
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--color-green-hover);
+}
+.contacts > .wrapper > .block .contacts__subblock .contacts__form form input:not(button)::-ms-input-placeholder, .contacts > .wrapper > .block .contacts__subblock .contacts__form form textarea:not(button)::-ms-input-placeholder, .contacts > .wrapper > .block .contacts__subblock .contacts__form form button:not(button)::-ms-input-placeholder {
+  font-family: "JetBrains Mono";
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--color-green-hover);
+}
+.contacts > .wrapper > .block .contacts__subblock .contacts__form form input:not(button)::placeholder, .contacts > .wrapper > .block .contacts__subblock .contacts__form form textarea:not(button)::placeholder, .contacts > .wrapper > .block .contacts__subblock .contacts__form form button:not(button)::placeholder {
+  font-family: "JetBrains Mono";
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--color-green-hover);
+}
+.contacts > .wrapper > .block .contacts__subblock .contacts__form form input, .contacts > .wrapper > .block .contacts__subblock .contacts__form form textarea {
+  font-size: 1rem;
+  caret-color: var(--color-green-hover);
+}
+.contacts > .wrapper > .block .contacts__subblock .contacts__form form input:focus, .contacts > .wrapper > .block .contacts__subblock .contacts__form form textarea:focus {
+  color: var(--color-black);
+  outline: 2px solid var(--color-green-hover);
+  outline-offset: -3px;
+  font-weight: 400;
+}
+.contacts > .wrapper > .block .contacts__subblock .contacts__form form .form__textarea {
+  position: relative;
+  max-height: 110px;
+  width: 100%;
+}
+.contacts > .wrapper > .block .contacts__subblock .contacts__form form .form__textarea > textarea {
+  padding: 9px 20px 0 15px;
+  height: 110px;
+  color: var(--color-green-hover);
+  resize: none;
+}
+.contacts > .wrapper > .block .contacts__subblock .contacts__form form .form__textarea > .remove__cross {
+  position: absolute;
+  top: 10%;
+  right: 2%;
+  -webkit-transform: translate(-10%, -3%);
+          transform: translate(-10%, -3%);
+}
+.contacts > .wrapper > .block .contacts__subblock .contacts__form form button {
+  height: 32px;
+  background-color: var(--color-dark-blue);
+  font-family: "JetBrains Mono";
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-green-hover);
 }
 .contacts > .wrapper > .block .contacts__subblock .contacts__links h3 {
   font-family: "JetBrains Mono";
   font-size: 28px;
   font-weight: 400;
   color: var(--color-white);
+  margin-bottom: 26px;
+}
+.contacts > .wrapper > .block .contacts__subblock .contacts__links .contacts__links__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 24px;
+}
+.contacts > .wrapper > .block .contacts__subblock .contacts__links .contacts__links__list .social__link {
+  position: relative;
+  padding: 7px;
+  background-color: var(--color-light-blue);
+  border-radius: 50%;
+  height: 64px;
+  width: 64px;
+}
+.contacts > .wrapper > .block .contacts__subblock .contacts__links .contacts__links__list .social__link a {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .credits {

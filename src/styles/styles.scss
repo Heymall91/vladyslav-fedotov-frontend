@@ -31,6 +31,11 @@
     color: $color;
 }
 
+@mixin border-radius-shadow($radius, $x, $y, $depth, $color){
+    border-radius: $radius;
+    box-shadow: $x $y $depth $color;
+}
+
 // general
 
 .ahead{
@@ -91,6 +96,12 @@ header {
 
         >.block .menu,
         .block .menu ul {
+            // @include display(flex, space-between, center, row);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 19px;
+
             >li a {
                 position: relative;
                 font-size: 1rem;
@@ -115,9 +126,6 @@ header {
                     }
                 }
             }
-
-            @include display(flex, space-between, center, row);
-            gap: 19px;
         }
     }
 }
@@ -498,21 +506,140 @@ header {
     background-color: var(--color-medium-blue);
     > .wrapper{
         > .block{
-            @include display(flex, center, center, column)
+            @include display(flex, center, center, column);
         }
         >.block .contacts__subblock{
             background-color: var(--color-dark-blue);
             @include display(flex, space-between, center, row);
+            @include border-radius-shadow(10px, 8px, 8px, 8px, rgba(0, 0, 0, 0.25));
+            width: 100%;
+            padding: 64px 80px;
+            border-radius: 10px;
+
+            .block__separate{
+                align-self: baseline;
+                background-color: var(--color-white);
+                height: 333px;
+                width: 4px;
+                border-radius: 2px;
+            }
+
+            .contacts__form{
+                @include display(flex, center, center, column);
+                gap: 21px;
+            }
 
             .contacts__form p{
-                @include fontOptions("Ubuntu Mono", 20px, "regular", var(--color-white));
+                @include fontOptions("Ubuntu Mono", 20px, 400, var(--color-white));
                 white-space: pre-line;
-                color: var(--color-white);
+
+                span{
+                    font-size: 20px;
+                    color: var(--color-green-hover);
+                }
+            }
+
+            .contacts__form form{
+                background-color: var(--color-light-blue);
+                padding: 16px 23px;
+                min-height: 273px;
+                width: 300px;
+                @include border-radius-shadow(10px, 8px, 8px, 8px, rgba(0, 0, 0, 0.25));
+                @include display(flex, center, center, column);
+                gap: 13px;
+
+                > .form__input{
+                    height: 100%;
+                    position: relative;
+                    width: 100%;
+
+                    > input{                    
+                        min-height: 30px;
+                        text-indent: 15px;
+                        color: var(--color-green-hover);
+                    }
+
+                    > .remove__cross svg{
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+
+                input, textarea, button{
+                    border: none;
+                    border-radius: 10px;
+                    width: 100%;
+
+                    &:not(button)::placeholder{
+                        @include fontOptions("JetBrains Mono", 16px, 300, var(--color-green-hover));
+                    }
+                }
+
+                input, textarea{
+                    font-size: 1rem;
+                    caret-color: var(--color-green-hover);
+                    &:focus{
+                        color: var(--color-black);
+                        outline: 2px solid var(--color-green-hover);
+                        outline-offset: -3px;
+                        font-weight: 400;
+                    }
+                }
+
+                .form__textarea{
+                    position: relative;
+                    max-height: 110px;
+                    width: 100%;
+
+                    > textarea{
+                    padding: 9px 20px 0 15px;
+                    height: 110px;
+                    color: var(--color-green-hover);
+                    resize: none;
+                    }
+
+                    > .remove__cross{
+                        position: absolute;
+                        top: 10%;
+                        right: 2%;
+                        transform: translate(-10%, -3%);
+                    }
+                }
+
+                button{
+                    height: 32px;                 
+                    background-color: var(--color-dark-blue);
+                    @include fontOptions("JetBrains Mono", 16px, 600, var(--color-green-hover));
+                }
             }
 
             .contacts__links{
                 h3{
                     @include fontOptions("JetBrains Mono", 28px, 400, var(--color-white));
+                    margin-bottom: 26px;
+                }
+
+                .contacts__links__list{
+                    @include display(flex, center, center, row);
+                    gap: 24px;
+
+                    .social__link{
+                        position: relative;
+                        padding: 7px;
+                        background-color: var(--color-light-blue);
+                        border-radius: 50%;
+                        height: 64px;
+                        width: 64px;
+
+                        a{
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
                 }
             }
         }

@@ -27,12 +27,27 @@
       "des": "Ten projekt został stworzony jako landing-page dla eko-rolników. Zastosowano w nim również pewne praktyki do ćwiczenia Reacta i SCSS."
     },
     "pan-broker": {
-      "des": "Ta strona lądowania została stworzona dla brokera pszenicy. Posiada dwie wersje językowe: ukraińską i angielską"
+      "des": "Ten landing-page został stworzony dla brokera pszenicy. Posiada dwie wersje językowe: ukraińską i angielską"
     },
     "finsweet": {
       "des": "Pet-projekt strony internetowej dla rekrutacji blogerów."
     }
   },
+  "contacts": {
+        "title": "Kontakt",
+        "ask": "/*pytania*/",
+        "partnership": "/*współpraca*/",
+        "message": "Jeżeli masz jakiś <span>{{ask}}</span> albo\n interesuje Cię <span>{{partnership}}</span>, napisz do\n mnie wiadomość poniżej. Niebawem odezwę się",
+        "form": {
+            "email": "Twój email",
+            "theme": "Temat",
+            "message": "Twoja wiadomość",
+            "send": "Wyślij"
+        },
+        "links":{
+            "title": "Obserwuj mnie również tutaj"
+        }
+    },
   "credits": {
       "title": "Niniejsza strona WWW została zaprojektowana przez "
   }

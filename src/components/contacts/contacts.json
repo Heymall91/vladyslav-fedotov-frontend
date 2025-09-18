@@ -1,0 +1,20 @@
+[
+    {
+        "link": "https://github.com/Heymall91",
+        "title": "GitHub",
+        "src": "../../../src/assets/contacts/github.svg",
+        "alt": "GitHub"
+    },
+    {
+        "link": "https://t.me/heymall",
+        "title": "Telegram",
+        "src": "../../../src/assets/contacts/telegram.svg",
+        "alt": "Telegram"
+    },
+    {
+        "link": "www.linkedin.com/in/vladyslav-fedotov-290277356",
+        "title": "LinkedIn",
+        "src": "../../../src/assets/contacts/linkedin.svg",
+        "alt": "LinkedIn"
+    }
+]

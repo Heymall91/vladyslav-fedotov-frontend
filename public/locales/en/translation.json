@@ -34,8 +34,10 @@
         }
     },
     "contacts": {
-        "title": "Contacts",
-        "message": "If you want to /*ask me*/ or would be\n /*interested in the partnership*/, please\n write me in form below. I’ll answer for sure",
+        "title": "Contact",
+        "ask": "/*ask me*/",
+        "partnership": "/*interested in the partnership*/",
+        "message": "If you want to <span>{{ask}}</span> or would be\n <span>{{partnership}}</span>, please\n write me in form below. I’ll answer so soon",
         "form": {
             "email": "Your email",
             "theme": "Theme",
