@@ -625,7 +625,16 @@ header {
                     @include display(flex, center, center, row);
                     gap: 24px;
 
-                    .social__link{
+                    .social__link__linkedin img{
+                        height: 40px !important;
+                        width: 40px !important;
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                    } 
+
+                    .social__link, .social__link__linkedin{
                         position: relative;
                         padding: 7px;
                         background-color: var(--color-light-blue);
@@ -633,13 +642,16 @@ header {
                         height: 64px;
                         width: 64px;
 
-                        a{
+                        > img{
+                            height: 50px;
+                            width: 50px;
                             position: absolute;
                             left: 50%;
                             top: 50%;
                             transform: translate(-50%, -50%);
-                        }
-                    }
+                        }       
+                    }      
+                    
                 }
             }
         }
