@@ -711,7 +711,16 @@ header .wrapper .block .menu ul > li a:hover::after {
           flex-direction: row;
   gap: 24px;
 }
-.contacts > .wrapper > .block .contacts__subblock .contacts__links .contacts__links__list .social__link {
+.contacts > .wrapper > .block .contacts__subblock .contacts__links .contacts__links__list .social__link__linkedin img {
+  height: 40px !important;
+  width: 40px !important;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.contacts > .wrapper > .block .contacts__subblock .contacts__links .contacts__links__list .social__link, .contacts > .wrapper > .block .contacts__subblock .contacts__links .contacts__links__list .social__link__linkedin {
   position: relative;
   padding: 7px;
   background-color: var(--color-light-blue);
@@ -719,7 +728,9 @@ header .wrapper .block .menu ul > li a:hover::after {
   height: 64px;
   width: 64px;
 }
-.contacts > .wrapper > .block .contacts__subblock .contacts__links .contacts__links__list .social__link a {
+.contacts > .wrapper > .block .contacts__subblock .contacts__links .contacts__links__list .social__link > img, .contacts > .wrapper > .block .contacts__subblock .contacts__links .contacts__links__list .social__link__linkedin > img {
+  height: 50px;
+  width: 50px;
   position: absolute;
   left: 50%;
   top: 50%;

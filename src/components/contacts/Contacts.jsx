@@ -104,6 +104,7 @@ export default function Contacts(){
                                 {contacts.map(e => {
                                     return <SocLink
                                         key={e.link}
+                                        classItem={e.classItem}
                                         link={e.link}
                                         title={e.title}
                                         src={e.src}
