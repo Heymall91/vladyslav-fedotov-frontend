@@ -32,6 +32,42 @@
 
 }
 
+@media(max-width: 920px){
+    .portfolio > .wrapper > .block > .portfolio__list > .portfolio__item{
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+
+        > .portfolio__des{
+            text-align: center;
+        }
+
+        > .portfolio__des > .portfolio__des__technology h4::before{
+            left: 0;
+        }
+        
+        > .portfolio__des > .portfolio__des__technology > .portfolio__des__technology__list, .portfolio > .wrapper > .block > .portfolio__list > .portfolio__item > .portfolio__des > .portfolio__des__technology .portfolio__des__technology__list .technology__item{
+            justify-content: center;
+        }
+    }
+
+    .portfolio > .wrapper > .block > .portfolio__list > .portfolio__item > .portfolio__des > .portfolio__des__main{
+        padding: 25px 0;
+    }
+
+    .contacts > .wrapper > .block .contacts__subblock{
+        width: 90%;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .contacts > .wrapper > .block .contacts__subblock .block__separate{
+        height: 4px;
+        width: 100%;
+    }
+}
+
 @media(max-width: 720px){
     header{
         padding: 2rem;

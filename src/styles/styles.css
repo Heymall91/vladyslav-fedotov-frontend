@@ -328,6 +328,8 @@ header .wrapper .block .menu ul > li a:hover::after {
   width: 64px;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4666666667));
+          filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4666666667));
 }
 .my__competitions > .wrapper > .block > .my__competitions__block > .skills.hard > .skills__list.hard > li > span {
   font-size: 24px;

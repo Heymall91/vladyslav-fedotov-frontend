@@ -20,14 +20,14 @@
   },
   "portfolio": {
     "title": "Portfolio",
-    "click": "Aby otworzyć, stuknij obrazek z lewa",
+    "click": "Aby otworzyć, stuknij obrazek",
     "des": "Opis",
     "technologies": "Napisane za pomocą",
     "farmzi": {
       "des": "Ten projekt został stworzony jako landing-page dla eko-rolników. Zastosowano w nim również pewne praktyki do ćwiczenia Reacta i SCSS."
     },
     "pan-broker": {
-      "des": "Ten landing-page został stworzony dla brokera pszenicy. Posiada dwie wersje językowe: ukraińską i angielską"
+      "des": "Ten landing-page został stworzony dla brokera pszenicy. Posiada dwie wersje językowe: ukraińską i angielską."
     },
     "finsweet": {
       "des": "Pet-projekt strony internetowej dla rekrutacji blogerów."

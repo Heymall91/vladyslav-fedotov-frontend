@@ -326,6 +326,7 @@ header {
 
                             > img{
                                 @include svgSize();
+                               filter: drop-shadow(4px 4px 4px #00000077);
                             }
 
                             > span{
