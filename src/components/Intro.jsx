@@ -10,7 +10,7 @@ export default function Intro() {
     const { t } = useTranslation();
 
     return (
-        <div className="intro">
+        <div className="intro" id="intro">
             <div className="wrapper">
                 <div className="block flex">
                     <div className="intro__subblock">

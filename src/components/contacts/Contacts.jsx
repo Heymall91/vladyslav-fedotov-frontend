@@ -14,7 +14,7 @@ export default function Contacts(){
 
     const {t} = useTranslation();
     return(
-        <div className="contacts">
+        <div className="contacts" id="contacts">
             <div className="wrapper">
                 <div className="block">
                     <div className="ahead">{t("contacts.title")}</div>

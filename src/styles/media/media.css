@@ -1,4 +1,4 @@
-@media(max-width: 1220px){
+@media screen and (max-width: 1220px){
     .intro .wrapper .block{
         flex-direction: column;
         gap: 0;
@@ -32,7 +32,7 @@
 
 }
 
-@media(max-width: 920px){
+@media screen and (max-width: 920px){
     .portfolio > .wrapper > .block > .portfolio__list > .portfolio__item{
         width: 90%;
         flex-direction: column;
@@ -68,7 +68,7 @@
     }
 }
 
-@media(max-width: 720px){
+@media screen and (max-width: 720px){
     header{
         padding: 2rem;
     }
@@ -124,5 +124,141 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (min-width: 344px) and (max-width: 568px){
+
+    .ahead{
+        padding-bottom: 20px;
+    }
+
+    .block{
+        padding: 20px;
+    }
+
+    .my__competitions .wrapper .block .my__competitions__block, .block .column, .portfolio > .wrapper > .block > .portfolio__list > .portfolio__item{
+        width: 100%
+    }
+
+    .intro > .wrapper > .block > .intro__subblock .intro__about__me{
+
+        min-height: 0;
+
+        > .intro__text__block{
+            padding: 1.6rem;
+            min-height: 0;
+            border-radius: 12px;
+            background-color: var(--color-dark-blue);
+            line-height: 36px;
+        }
+    }
+
+    .intro > .wrapper > .block > .intro__subblock .intro__about__me{
+        width: 100%;
+    }
+
+    .intro > .wrapper > .block > .intro__subblock .intro__about__me > .intro__text__block > .html__item, .intro > .wrapper > .block > .intro__subblock .intro__about__me > .intro__text__block .html__item div, .intro > .wrapper > .block > .intro__subblock .intro__about__me > .intro__text__block .html__hello, .intro > .wrapper > .block > .intro__subblock .intro__about__me > .intro__text__block .text_typed .Typewriter .Typewriter__wrapper, .intro > .wrapper > .block > .intro__subblock .intro__about__me > .intro__text__block .text_typed .Typewriter .Typewriter__cursor, .arrow__item{
+        font-size: 1.6rem;
+    }
+
+    .intro > .wrapper > .block > .intro__pc::before{
+        content: "";
+        width: 27%;
+        height: 29%;
+        background: url(/src/assets/intro-svg/button.svg) no-repeat center / contain;
+        bottom: 14%;
+        left: 48%;
+    }
+
+    .intro > .wrapper > .block > .intro__pc{
+        width: 100%;
+
+        > img{
+            width: 100%;
+        }
+    }
+
+    .ahead, .contacts > .wrapper > .block .contacts__subblock .contacts__links h3{
+        text-align: center;
+    }
+
+    .my__competitions .wrapper .block .my__competitions__block{
+        gap: 40px;
+        padding: 32px;
+    }
+
+    .my__competitions > .wrapper > .block > .my__competitions__block > .skills.hard > .skills__list.hard > li > span{
+        font-size: 19px;
+    }
+
+    .my__competitions > .wrapper > .block > .my__competitions__block > .skills.hard > .skills__list.hard{
+        align-items: center;
+    }
+
+    .my__competitions > .wrapper > .block > .my__competitions__block > .skills > .skills__ahead{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        > h3{
+            font-size: 42px;
+        }
+    }
+
+    .my__competitions > .wrapper > .block > .my__competitions__block > .skills.soft > .skills__list > li{
+        font-size: 20px;
+        white-space: pre-line;
+    }
+
+    .contacts > .wrapper > .block .contacts__subblock .contacts__form p{
+        white-space: wrap;
+    }
+
+    .contacts > .wrapper > .block .contacts__subblock{
+        padding: 24px 18px;
+    }
+
+    .portfolio > .wrapper > .block > .portfolio__list > .portfolio__item > a, .portfolio > .wrapper > .block > .portfolio__list > .portfolio__item > a img{
+        width: 100%;
+    }
+
+    .portfolio .wrapper .block .portfolio__list .portfolio__item a .portfolio__ahead{
+        min-width: 100%;
+    }
+
+    .portfolio > .wrapper > .block > .portfolio__list > .portfolio__item > .portfolio__image__link > .portfolio__img__block{
+        border-radius: 0 0 14px 14px;
+    }
+
+    .portfolio > .wrapper > .block > .portfolio__list > .portfolio__item > a > .portfolio__ahead img{
+        height: 16px;
+        width: 16px;
+    }
+
+    .portfolio > .wrapper > .block > .portfolio__list > .portfolio__item > .portfolio__des > .portfolio__des__ahead h3{
+        font-size: 46px;
+        line-height: 48px;
+        padding-bottom: 25px;
+    }
+
+    .portfolio > .wrapper > .block > .portfolio__list > .portfolio__item > .portfolio__des{
+        padding-top: 0;
+    }
+
+    .portfolio > .wrapper > .block > .portfolio__list > .portfolio__item > .portfolio__des > .portfolio__des__technology > .portfolio__des__technology__list, .portfolio > .wrapper > .block > .portfolio__list > .portfolio__item > .portfolio__des > .portfolio__des__technology .portfolio__des__technology__list .technology__item{
+        flex-wrap: wrap;
+    }
+
+    .portfolio > .wrapper > .block > .portfolio__list > .portfolio__item{
+        padding: 20px;
+    }
+
+    .portfolio > .wrapper > .block > .portfolio__list{
+        gap: 20px;
+    }
+
+    .contacts > .wrapper > .block .contacts__subblock .contacts__form form{
+        width: 100%;
     }
 }

@@ -8,7 +8,7 @@ export default function Portfolio(){
     const {t} = useTranslation();
 
     return(
-        <div className="portfolio">
+        <div className="portfolio" id="portfolio">
             <div className="wrapper">
                 <div className="block column">
                     <div className="ahead">{t("portfolio.title")}</div>

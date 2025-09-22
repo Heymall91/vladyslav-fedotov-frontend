@@ -40,10 +40,10 @@ export default function NavMenu({flag, setFlag}) {
     return (
         <nav className="menu">
             <ul>
-                <li><a href="#">{t('header.aboutMe')}</a></li>
-                <li><a href="#">{t('header.mySkills')}</a></li>
-                <li><a href="#">{t('header.portfolio')}</a></li>
-                <li><a href="#">{t('header.contacts')}</a></li>
+                <li><a href="#intro">{t('header.aboutMe')}</a></li>
+                <li><a href="#my__competitions">{t('header.mySkills')}</a></li>
+                <li><a href="#portfolio">{t('header.portfolio')}</a></li>
+                <li><a href="#contacts">{t('header.contacts')}</a></li>
             </ul>
             <Select
                 className="language_select"

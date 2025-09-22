@@ -13,7 +13,7 @@ import { useTranslation } from 'react-i18next'
 export default function MyCompetitions(){
     const {t} = useTranslation();
     return (
-        <div className="my__competitions">
+        <div className="my__competitions" id="my__competitions">
             <div className="wrapper">
                 <div className="block">
                     <div className="ahead">{t("myCompetitions.title")}</div>

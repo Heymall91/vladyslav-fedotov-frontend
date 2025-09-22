@@ -9,6 +9,8 @@
   color: #000;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  scroll-behavior: smooth;
+  scroll-padding: 133px;
 }
 
 .ahead {
