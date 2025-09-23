@@ -30,7 +30,7 @@ export default function Header(){
                                 <div className="menu__burger__item one"></div>
                                 <div className="menu__burger__item two"></div>
                             </div>
-                            <NavMenu flag={flag} setFlag={setFlag}/>
+                            <NavMenu flag={flag} setFlag={setFlag} setClicked={setOpened}/>
                         </div>}
                     </div>
                 </div>

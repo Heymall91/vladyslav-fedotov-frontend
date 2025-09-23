@@ -1,13 +1,13 @@
 // react-select
 import Select, {components} from "react-select";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 // i18n
 import i18n from 'i18next'
 import  options from '/src/utils/Options.jsx'
 import { useTranslation } from "react-i18next";
 
-export default function NavMenu({flag, setFlag}) {
+export default function NavMenu({flag, setFlag, setClicked}){
 
     const DropdownIndicator = (props) => (
         <components.DropdownIndicator {...props}>
@@ -38,18 +38,19 @@ export default function NavMenu({flag, setFlag}) {
     };
 
     return (
-        <nav className="menu">
-            <ul>
-                <li><a href="#intro">{t('header.aboutMe')}</a></li>
-                <li><a href="#my__competitions">{t('header.mySkills')}</a></li>
-                <li><a href="#portfolio">{t('header.portfolio')}</a></li>
-                <li><a href="#contacts">{t('header.contacts')}</a></li>
-            </ul>
-            <Select
-                className="language_select"
-                classNamePrefix="language_select"
-                value={flag}
-                onChange={
+        <>
+            <nav className="menu">
+                <ul>
+                    <li onClick={() => setClicked(false)}><a href="#intro">{t('header.aboutMe')}</a></li>
+                    <li onClick={() => setClicked(false)}><a href="#my__competitions">{t('header.mySkills')}</a></li>
+                    <li onClick={() => setClicked(false)}><a href="#portfolio">{t('header.portfolio')}</a></li>
+                    <li onClick={() => setClicked(false)}><a href="#contacts">{t('header.contacts')}</a></li>
+                </ul>
+                <Select
+                    className="language_select"
+                    classNamePrefix="language_select"
+                    value={flag}
+                    onChange={
                     (opt) => {
                         changeHandler(opt);
                     }
@@ -91,8 +92,9 @@ export default function NavMenu({flag, setFlag}) {
                         textAlign: 'center',
                     })
                 }}
-                options={options}
-            />
-        </nav>
+                    options={options}
+                />
+            </nav>
+        </>
     )
 }

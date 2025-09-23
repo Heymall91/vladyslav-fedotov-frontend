@@ -5,7 +5,7 @@ import MyCompetitions from './components/MyCompetition'
 import Portfolio from './components/portfolio/Portfolio'
 import Contacts from './components/contacts/Contacts'
 import Credits from './components/Credits'
-import '../src/index.css'
+import './index.css'
 
 function App() {
 
